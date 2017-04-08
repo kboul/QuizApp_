@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.quizapp_.ActivityQuestionsFirst">
+
+    <RelativeLayout style="@style/QuestionsWrapper">
+
+        <LinearLayout style="@style/QuestionsTextWrapper">
+
+            <TextView style="@style/QuestionsText" />
+
+            <RadioGroup
+                android:id="@+id/first_question_group"
+                style="@style/QuestionsRadioGroup">
+
+                <RadioButton
+                    android:id="@+id/right_answer_first_question"
+                    style="@style/QuestionsFirstAnswer"
+                    android:text="@string/first_question_first_answer" />
+
+                <RadioButton
+                    style="@style/QuestionsSecondAnswer"
+                    android:text="@string/first_question_second_answer" />
+
+                <RadioButton
+                    style="@style/QuestionsFifthAnswer"
+                    android:text="@string/first_question_third_answer" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionsText"
+                android:text="@string/second_question_text" />
+
+            <RadioGroup
+                android:id="@+id/second_question_group"
+                style="@style/QuestionsRadioGroup">
+
+                <RadioButton
+                    android:id="@+id/right_answer_second_question"
+                    style="@style/QuestionsFirstAnswer"
+                    android:text="@string/second_question_first_answer" />
+
+                <RadioButton
+                    style="@style/QuestionsSecondAnswer"
+                    android:text="@string/second_question_second_answer" />
+
+                <RadioButton
+                    style="@style/QuestionsFourthAnswer"
+                    android:text="@string/second_question_third_answer" />
+            </RadioGroup>
+
+            <TextView
+                style="@style/QuestionsText"
+                android:text="@string/third_question_text" />
+
+            <RadioGroup
+                android:id="@+id/third_question_group"
+                style="@style/QuestionsRadioGroup">
+
+                <RadioButton
+                    style="@style/QuestionsFirstAnswer"
+                    android:text="@string/third_question_first_answer" />
+
+                <RadioButton
+                    style="@style/QuestionsSecondAnswer"
+                    android:text="@string/third_question_second_answer" />
+
+                <RadioButton
+                    android:id="@+id/right_answer_third_question"
+                    style="@style/QuestionsFifthAnswer"
+                    android:text="@string/third_question_third_answer" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/QuestionsButtonWrapper">
+
+            <Button
+                android:id="@+id/next"
+                style="@style/NextButton"
+                android:onClick="click" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

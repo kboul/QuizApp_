@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <!-- Welcome Screen -->
+    <string name="welcome_screen_message">Welcome to the ultimate Pink Floyd Quiz</string>
+    <string name="welcome_screen_edit_text">Please type your name</string>
+    <string name="start_button">Start</string>
+
+    <!-- Questions -->
+    <string name="back_button">Back</string>
+    <string name="next_button">Next</string>
+
+    <!-- First Question -->
+    <string name="first_question_text">1. On which album do we find the song High Hopes?</string>
+    <string name="first_question_first_answer">The Division Bell</string>
+    <string name="first_question_second_answer">The Wall</string>
+    <string name="first_question_third_answer">Dark Side of the Moon</string>
+
+    <!-- Second Question -->
+    <string name="second_question_text">2. Which is Pink Floyd\'s best selling album?</string>
+    <string name="second_question_first_answer">Dark Side of the Moon</string>
+    <string name="second_question_second_answer">The Wall</string>
+    <string name="second_question_third_answer">Wish you Were Here</string>
+
+    <!--  Third Question -->
+    <string name="third_question_text">3. Who is the original guitarist of Pink Floyd?</string>
+    <string name="third_question_first_answer">Stevie Ray Vaughan\t\t</string>
+    <string name="third_question_second_answer">David Gilmour</string>
+    <string name="third_question_third_answer">Syd Barrett</string>
+
+    <!-- Fourth Question -->
+    <string name="fourth_question_text">4. Which of the following songs are included in the album Animals?</string>
+    <string name="fourth_question_first_answer">Time\t</string>
+    <string name="fourth_question_second_answer">Pigs\t\t</string>
+    <string name="fourth_question_third_answer">Sheep</string>
+
+    <!-- Fifth Question -->
+    <string name="fifth_question_text">5. Which album depicts a man on fire shaking another man\'s hand?</string>
+    <string name="fifth_question_first_answer">Uma Guma</string>
+    <string name="fifth_question_second_answer">Wish You Were Here</string>
+    <string name="fifth_question_third_answer">The Wall</string>
+
+    <!-- Sixth Question -->
+    <string name="sixth_question_text">6. What is the full name of man on fire?</string>
+    <string name="man_on_fire">Type the man on fire name!</string>
+</resources>

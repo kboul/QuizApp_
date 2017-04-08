@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="welcome_screen_background">#2196F3</color>
+    <color name="welcome_screen_message">#FFFFFF</color>
+    <color name="first_question_background">#80C6ff</color>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome Screen -->
+    <dimen name="welcome_screen_margins">10dp</dimen>
+    <dimen name="welcome_screen_message">25sp</dimen>
+
+    <!-- Questions -->
+    <dimen name="questions_text">20sp</dimen>
+    <dimen name="radio_answers">18sp</dimen>
+</resources>

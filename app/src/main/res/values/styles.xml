@@ -1,0 +1,171 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <!-- Welcome Screen -->
+    <style name="welcomeScreenLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/welcome_screen_background</item>
+    </style>
+
+    <style name="welcomeScreenMessage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item> <!-- for the landscape -->
+        <item name="android:layout_marginTop">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginBottom">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginRight">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginLeft">@dimen/welcome_screen_margins</item>
+        <item name="android:text">@string/welcome_screen_message</item>
+        <item name="android:textColor">@color/welcome_screen_message</item>
+        <item name="android:textSize">@dimen/welcome_screen_message</item>
+    </style>
+
+    <style name="welcomeScreenImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/cover</item>
+    </style>
+
+    <style name="welcomeScreenEditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginBottom">@dimen/welcome_screen_margins</item>
+        <item name="android:hint">@string/welcome_screen_edit_text</item>
+        <item name="android:text"></item>
+    </style>
+
+    <style name="startButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginBottom">@dimen/welcome_screen_margins</item>
+        <item name="android:text">@string/start_button</item>
+    </style>
+
+    <!-- Questions -->
+    <style name="QuestionsWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/first_question_background</item>
+    </style>
+
+    <style name="QuestionsTextWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="QuestionsButtonWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="QuestionsRadioGroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="QuestionsText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginBottom">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginRight">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginLeft">@dimen/welcome_screen_margins</item>
+        <item name="android:text">@string/first_question_text</item>
+        <item name="android:textColor">@color/welcome_screen_message</item>
+        <item name="android:textSize">@dimen/questions_text</item>
+    </style>
+
+    <style name="QuestionsFirstAnswer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/radio_answers</item>
+    </style>
+
+    <style name="QuestionsSecondAnswer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/radio_answers</item>
+    </style>
+
+    <style name="QuestionsThirdAnswer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/radio_answers</item>
+    </style>
+
+    <style name="QuestionsFourthAnswer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/radio_answers</item>
+    </style>
+
+    <style name="QuestionsFifthAnswer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/radio_answers</item>
+    </style>
+
+    <style name="NextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/next_button</item>
+    </style>
+
+    <style name="CheckBoxWrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="CheckBoxes">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/radio_answers</item>
+    </style>
+
+    <style name="ManOnFire">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:hint">@string/man_on_fire</item>
+    </style>
+
+    <style name="RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:numStars">@integer/rating_bar_number</item>
+        <item name="android:stepSize">1.0</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="Results">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginBottom">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginRight">@dimen/welcome_screen_margins</item>
+        <item name="android:layout_marginLeft">@dimen/welcome_screen_margins</item>
+        <item name="android:textColor">@color/welcome_screen_message</item>
+        <item name="android:textSize">@dimen/questions_text</item>
+    </style>
+</resources>
