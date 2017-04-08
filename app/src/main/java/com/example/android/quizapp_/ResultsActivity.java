@@ -63,7 +63,7 @@ public class ResultsActivity extends AppCompatActivity {
             case 6:
                 score.setText("Congratulations " + name + ".\n " +
                         "You have " + Integer.toString(answers) + " correct answers!" +
-                        "\nYou have an excellent knowledge for Pink Floyd!");
+                        "\nYou have excellent knowledge for Pink Floyd!");
                 ratingBar.setRating(6);
         }
         ratingBar.setVisibility(View.VISIBLE);

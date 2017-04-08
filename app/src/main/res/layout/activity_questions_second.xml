@@ -19,6 +19,7 @@
 
                 <CheckBox
                     style="@style/CheckBoxes"
+                    android:id="@+id/wrong_answer_checkbox"
                     android:text="@string/fourth_question_first_answer" />
 
                 <CheckBox
