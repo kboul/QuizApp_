@@ -84,6 +84,5 @@ public class ActivityQuestionsFirst extends AppCompatActivity {
         if (rightAnswerThirdQuestion.isChecked()) {
             questionsAnswered++;
         }
-        //http://stackoverflow.com/questions/9178253/how-to-handle-an-intent-which-does-not-have-data-at-first-call-of-an-activity
     }
 }
