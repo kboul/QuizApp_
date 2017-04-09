@@ -21,16 +21,13 @@
         </activity>
         <activity
             android:name=".ActivityQuestionsFirst"
-            android:configChanges="orientation|keyboardHidden">
-        </activity>
+            android:configChanges="orientation|keyboardHidden"></activity>
         <activity
             android:name=".ActivityQuestionsSecond"
-            android:configChanges="orientation|keyboardHidden">
-        </activity>
+            android:configChanges="orientation|keyboardHidden"></activity>
         <activity
             android:name=".ResultsActivity"
-            android:configChanges="orientation|keyboardHidden">
-        </activity>
+            android:configChanges="orientation|keyboardHidden"></activity>
     </application>
 
 </manifest>

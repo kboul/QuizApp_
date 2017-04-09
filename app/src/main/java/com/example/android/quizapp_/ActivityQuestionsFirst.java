@@ -19,7 +19,9 @@ public class ActivityQuestionsFirst extends AppCompatActivity {
     int questionsAnswered = 0;
 
     @Override
-    public void onBackPressed() { return; }
+    public void onBackPressed() {
+        return;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,7 @@ public class ActivityQuestionsFirst extends AppCompatActivity {
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
         /*
-        *  Go Forward
+        *  Go Forward to 2nd Activity
         */
         Button next = (Button) findViewById(R.id.next);
         next.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +42,7 @@ public class ActivityQuestionsFirst extends AppCompatActivity {
                 String name = getIntent().getStringExtra("name");
 
                 // Check whether the radio buttons have been selected
-                if (checkIfFirst3AnswersAreEmpty()){
+                if (checkIfFirst3AnswersAreEmpty()) {
                     return;
                 }
 
@@ -59,6 +61,9 @@ public class ActivityQuestionsFirst extends AppCompatActivity {
         });
     }
 
+    /*
+    *   Checks whether questions 1-3 have been filled/selected
+    **/
     private boolean checkIfFirst3AnswersAreEmpty() {
         for (int i = 0; i < radioButtonIDs.length; i++) {
             RadioGroup QuestionGroup = (RadioGroup) findViewById(radioButtonIDs[i]);
@@ -71,6 +76,9 @@ public class ActivityQuestionsFirst extends AppCompatActivity {
         return false;
     }
 
+    /*
+    *   Checks the score of the questions 1-3
+    **/
     private void checkScoreForFirst3Answers() {
         RadioButton rightAnswerFirstQuestion = (RadioButton) findViewById(R.id.right_answer_first_question);
         RadioButton rightAnswerSecondQuestion = (RadioButton) findViewById(R.id.right_answer_second_question);

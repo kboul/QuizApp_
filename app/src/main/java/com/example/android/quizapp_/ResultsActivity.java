@@ -69,6 +69,9 @@ public class ResultsActivity extends AppCompatActivity {
         ratingBar.setVisibility(View.VISIBLE);
     }
 
+    /*
+    *   Initiate a new activity from scratch - go to Main Activity
+    **/
     public void tryAgain(View view){
         Intent intent = new Intent(ResultsActivity.this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

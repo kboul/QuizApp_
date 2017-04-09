@@ -25,9 +25,13 @@ public class ActivityQuestionsSecond extends AppCompatActivity {
     String rightAnswerSixthQuestionContent;
     CheckBox firstRightAnswerCheckbox, secondRightAnswerCheckbox, wrongAnswerCheckbox;
 
-    // Disable back button
+    /*
+    *   Disable back button
+    **/
     @Override
-    public void onBackPressed() { return; }
+    public void onBackPressed() {
+        return;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +40,9 @@ public class ActivityQuestionsSecond extends AppCompatActivity {
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
+        /*
+        *  Go Forward to Results Activity
+        */
         Button next = (Button) findViewById(R.id.next);
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,9 +55,9 @@ public class ActivityQuestionsSecond extends AppCompatActivity {
                 rightAnswerSixthQuestion = (EditText) findViewById(R.id.right_answer_sixth_question);
                 rightAnswerSixthQuestionContent = rightAnswerSixthQuestion.getText().toString().toLowerCase();
 
-                firstRightAnswerCheckbox = (CheckBox)findViewById(first_right_answer_checkbox);
-                secondRightAnswerCheckbox = (CheckBox)findViewById(second_right_answer_checkbox);
-                wrongAnswerCheckbox = (CheckBox)findViewById(wrong_answer_checkbox);
+                firstRightAnswerCheckbox = (CheckBox) findViewById(first_right_answer_checkbox);
+                secondRightAnswerCheckbox = (CheckBox) findViewById(second_right_answer_checkbox);
+                wrongAnswerCheckbox = (CheckBox) findViewById(wrong_answer_checkbox);
 
                 //Check if 5th answer is empty
                 if (checkIfLast3AnswersAreEmpty()) {
@@ -74,10 +81,13 @@ public class ActivityQuestionsSecond extends AppCompatActivity {
         });
     }
 
+    /*
+    *   Checks the score of the questions 3-6
+    **/
     private void checkScoreForLast3Answers() {
         RadioButton rightAnswerFifthQuestion = (RadioButton) findViewById(R.id.right_answer_fifth_question);
 
-        if (firstRightAnswerCheckbox.isChecked() && secondRightAnswerCheckbox.isChecked() && !wrongAnswerCheckbox.isChecked()){
+        if (firstRightAnswerCheckbox.isChecked() && secondRightAnswerCheckbox.isChecked() && !wrongAnswerCheckbox.isChecked()) {
             answers++;
         }
         if (rightAnswerFifthQuestion.isChecked()) {
@@ -88,25 +98,31 @@ public class ActivityQuestionsSecond extends AppCompatActivity {
         }
     }
 
-    private boolean checkIfLast3AnswersAreEmpty(){
+    /*
+    *   Checks whether questions 3-6 have been filled/selected
+    **/
+    private boolean checkIfLast3AnswersAreEmpty() {
         RadioGroup fifthQuestionGroup = (RadioGroup) findViewById(R.id.fifth_question_group);
         int fifthQuestionGroupSelected = fifthQuestionGroup.getCheckedRadioButtonId();
 
-        if (fifthQuestionGroupSelected == -1 || rightAnswerSixthQuestionContent.equals("") || !checkIfCheckBoxesAreChecked())  {
+        if (fifthQuestionGroupSelected == -1 || rightAnswerSixthQuestionContent.equals("") || !checkIfCheckBoxesAreChecked()) {
             Toast.makeText(getApplicationContext(), "You have unchecked options!", Toast.LENGTH_SHORT).show();
             return true;
         }
         return false;
     }
 
-    private boolean checkIfCheckBoxesAreChecked(){
+    /*
+    *   Checks whether question's 5 checkbox has been selected
+    **/
+    private boolean checkIfCheckBoxesAreChecked() {
         int[] checkboxArray = new int[]{
                 R.id.first_right_answer_checkbox,
                 R.id.second_right_answer_checkbox,
                 R.id.wrong_answer_checkbox
         };
-        for (int i = 0; i < checkboxArray.length; i++){
-            CheckBox checkbox = (CheckBox)findViewById(checkboxArray[i]);
+        for (int i = 0; i < checkboxArray.length; i++) {
+            CheckBox checkbox = (CheckBox) findViewById(checkboxArray[i]);
             if (checkbox.isChecked()) {
                 return true;
             }
