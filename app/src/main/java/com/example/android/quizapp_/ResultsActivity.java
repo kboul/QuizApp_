@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RatingBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ResultsActivity extends AppCompatActivity {
 
@@ -29,42 +30,49 @@ public class ResultsActivity extends AppCompatActivity {
                         "You have " + Integer.toString(answers) + " correct answers!" +
                         "\nIt must be the first time you hear the phrase Pink Floyd!");
                 ratingBar.setRating(0);
+                toastScore(0);
                 break;
             case 1:
                 score.setText("That was not so successful " + name + ".\n " +
                         "You have " + Integer.toString(answers) + " correct answer!" +
                         "\nYou are really not a fun of Pink Floyd!");
                 ratingBar.setRating(1);
+                toastScore(1);
                 break;
             case 2:
                 score.setText("You got a few " + name + ".\n " +
                         "You have " + Integer.toString(answers) + " correct answers!" +
                         "\nYou seem to ...have heard somewhere something from Pink Floyd!");
                 ratingBar.setRating(2);
+                toastScore(2);
                 break;
             case 3:
                 score.setText("Good Try " + name + ".\n " +
                         "You have " + Integer.toString(answers) + " correct answers!" +
                         "\nYou seem to know the basic for Pink Floyd!");
                 ratingBar.setRating(3);
+                toastScore(3);
                 break;
             case 4:
                 score.setText("Congratulations " + name + ".\n " +
                         "You have " + Integer.toString(answers) + " correct answers!" +
                         "\nYou seem to know a lot for Pink Floyd!");
                 ratingBar.setRating(4);
+                toastScore(4);
                 break;
             case 5:
                 score.setText("Congratulations " + name + ".\n " +
                         "You have " + Integer.toString(answers) + " correct answers!" +
                         "\nYou seem to know a lot for Pink Floyd!");
                 ratingBar.setRating(5);
+                toastScore(5);
                 break;
             case 6:
                 score.setText("Congratulations " + name + ".\n " +
                         "You have " + Integer.toString(answers) + " correct answers!" +
                         "\nYou have excellent knowledge for Pink Floyd!");
                 ratingBar.setRating(6);
+                toastScore(6);
         }
         ratingBar.setVisibility(View.VISIBLE);
     }
@@ -76,5 +84,13 @@ public class ResultsActivity extends AppCompatActivity {
         Intent intent = new Intent(ResultsActivity.this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
+    }
+
+    /**
+    *   Toast score
+    *   @param score is the score equals to the number of correct given answers
+    **/
+    public void toastScore(int score){
+        Toast.makeText(getApplicationContext(), "You have " + score + " correct answers!", Toast.LENGTH_SHORT).show();
     }
 }
